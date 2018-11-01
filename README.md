@@ -50,13 +50,17 @@ npm install
 - Zijn boeken populairder geworden of juist niet, zijn films populairder geworden om te lenen?
   - _**Translation:** Did books get more popular or not, (or) did movies get more populair to borrow?_
 - 👉**Worden bepaalde genres vaker te laat teruggebracht?**
-  - _**Translation:** Are certain genres returned too late more often than others?_
+  - _**Translation:** Are certain genres returned to late more often than others?_
 - 👉**Welke genres zijn er sinds 1950 bijgekomen?**
   - _**Translation:** Wich genres have have emerged since 1950?_
 
 #### Picked Questions 📍
 - Hoelang worden boeken geleend gemiddeld per jaar?
-- Worden bepaalde genres vaker te laat terru
+  - **v.2** Hoelang worden boeken uit bepaalde genres gemiddeld geleend per jaar?
+- Worden bepaalde genres vaker te laat teruggebracht?
+  - **v.2** Worden bepaalde genres vaker te laat teruggebracht per jaar?
+- Welke genres zijn er sinds 1950 bijgekomen? 
+  - **v.2** Hoe is de populariteit van bepaalde genres verlopen sinds 1950?
 ### Sub-Questions 👶
 ### Hypotheses 🤓
 
