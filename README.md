@@ -1,5 +1,8 @@
 # functional-programming
 
+## Introduction
+For this project we're fetching data from the oba (public library of Amsterdam) api and creating a research case. With the data we're going to make visualizations with d3.js (which I have never used before). Main point of the project is this README. This README contains the research questions, sub-questions, hypotheses and code (screenshots).  
+
 ## Table of Contents
 - [To-do](#to-do)
 - [Installation Guide](#installation-guide)
@@ -17,6 +20,18 @@
 - [ ] d3.js implementeren
 
 ## Installation Guide
+#### 1. Clone the repository
+```
+https://github.com/jesseDijkman1/functional-programming.git
+```
+#### 2. Navigate to the repository
+```
+cd functional-programming
+```
+#### 3. Install the NPM packages
+```
+npm install
+```
 
 ## Process
 
