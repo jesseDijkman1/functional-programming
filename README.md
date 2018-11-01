@@ -1,14 +1,26 @@
 # functional-programming
 
-## Inhoudsopgave
-- [Proces](#proces)
-  - [Onderzoeksvragen](#onderzoeksvragen)
-  - [Gekozen vragen](#gekozen-vragen)
-  - [Deelvragen](#deelvragen)
+## Table of Contents
+- [To-do](#to-do)
+- [Installation Guide
+- [Process](#process)
+  - [Research Questions](#research-questions)
+  - [Picked Questions](#picked-questions)
+  - [Sub-Questions](#sub-questions)
   - [Hypotheses](#hypotheses)
-  
-## Proces
-### Onderzoeksvragen
+
+## To-do
+- [ ] Hoofdvragen afschermen en kiezen
+- [ ] Deelvragen opzetten
+- [ ] Hypotheses opzetten
+- [ ] Volledige date ophalen die ik nodig ga hebben
+- [ ] d3.js implementeren
+
+## Installation Guide
+
+## Process
+
+### Research Questions
 - Is er een verband tussen publicatiejaren en diktes van boeken? (Waren dikkere boeken populairder of niet?)
 - Is er een verband tussen het formaat van een boek en het publicatie jaar? (Waren grotere boeken populairder of niet?)
 - Wat heeft de publicatie datum te maken met de lengte van de titels? (Waren titels vroeger langer of korter?)
@@ -18,9 +30,9 @@
 - Worden bepaalde genres vaker te laat teruggebracht?
 - Welke genres zijn er sinds 1950 bijgekomen?
 
-#### Gekozen vragen
+#### Picked Questions
 
-### Deelvragen
+### Sub-Questions
 ### Hypotheses
 
 ## Code
