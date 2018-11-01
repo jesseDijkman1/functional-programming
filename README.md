@@ -1,5 +1,7 @@
 # functional-programming
 
+## Inhoudsopgave
+[Proces](#onderzoeksvragen)
 ## Proces
 ### Onderzoeksvragen
 - Is er een verband tussen publicatiejaren en diktes van boeken? (Waren dikkere boeken populairder of niet?)
