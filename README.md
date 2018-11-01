@@ -46,7 +46,7 @@ npm install
 - Zijn er bepaalde trends qua onderwerpen/genres per jaar?
   - _**Translation:** Were there trends in subjects/genres per year?_
 - 👉**Hoelang worden boeken geleend gemiddeld per jaar (door de jaren heen)?**
-  - _**Translation:** How long are books borrowed on average per year?
+  - _**Translation:** How long are books borrowed on average per year?_
 - Zijn boeken populairder geworden of juist niet, zijn films populairder geworden om te lenen?
   - _**Translation:** Did books get more popular or not, (or) did movies get more populair to borrow?_
 - 👉**Worden bepaalde genres vaker te laat teruggebracht?**
