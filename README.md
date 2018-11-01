@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [To-do](#to-do)
-- [Installation Guide
+- [Installation Guide](#installation-guide)
 - [Process](#process)
   - [Research Questions](#research-questions)
   - [Picked Questions](#picked-questions)
