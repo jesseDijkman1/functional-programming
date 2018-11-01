@@ -10,20 +10,17 @@ const client = new OBA({
 });
 
 
-// General usage:
-// client.get({ENDPOINT}, {PARAMS});
-// ENDPOINT = search | details | refine | schema | availability | holdings
-// PARAMS = API url parameter options (see api docs for more info)
-
-// Client returns a promise which resolves the APIs output in JSON
 const data = [];
-const dataAmount = Math.round(100 / 20);
-var pages = [];
+// Get the amount of pages by dividing the amount of date you want by 20
+var dataAmount = Math.round(100 / 20);
+// Array for the indexes of the data pages
+const pages = [];
 
 for (let i = 1; i <= dataAmount; i++) {
   pages.push(i);
 }
 
+// For each loop to go through the different pages (var i);
 pages.forEach((i) => {
 client.get('search', {
   q: 'rijk',
@@ -35,6 +32,7 @@ client.get('search', {
 
     correctRes.forEach(x => {
       data.push({
+        // Check if there is a titles key, then check if titles has a title key, then check if there are more; if so remove the first and select $t (title). If one of the first conditions fails return undefined.
         title: (x.titles) ? (x.titles.title) ? (x.titles.title.length > 1) ? x.titles.title.shift().$t : x.titles.title.$t : undefined : undefined,
         author: (x.authors) ? (x.authors['main-author']) ? x.authors['main-author'].$t : undefined : undefined,
         publication: (x.publication) ? (x.publication.year) ? x.publication.year.$t : undefined : undefined,
@@ -42,11 +40,12 @@ client.get('search', {
         language: (x.languages) ? (x.languages.language) ? x.languages.language.$t : undefined : undefined
       })
     })
+    // Check if data divided by 20 is equal to the amount of pages. If so call structureData()
     if ((data.length / 20) == pages.length) {
       structureData()
     }
   })
-  .catch(err => console.log('error', err)) // Something went wrong in the request to the API
+  .catch(err => console.log('error', err))
 })
 
 function structureData() {
