@@ -1,9 +1,9 @@
 # functional-programming
 
-## Introduction
-For this project we're fetching data from the oba (public library of Amsterdam) api and creating a research case. With the data we're going to make visualizations with d3.js (which I have never used before). Main point of the project is this README. This README contains the research questions, sub-questions, hypotheses and code (screenshots).  
+## Introduction ✌️
+For this project we're fetching data from the oba (public library of Amsterdam) api and creating a research case. With the data we're going to make visualizations with d3.js (which I have never used before). Main point of the project is this README. This README contains the research questions, sub-questions, hypotheses and code (screenshots). 
 
-## Table of Contents
+## Table of Contents 🗄
 - [To-do](#to-do)
 - [Installation Guide](#installation-guide)
 - [Process](#process)
@@ -13,29 +13,30 @@ For this project we're fetching data from the oba (public library of Amsterdam) 
   - [Hypotheses](#hypotheses)
 
 ## To-do
-- [ ] Hoofdvragen afschermen en kiezen
-- [ ] Deelvragen opzetten
-- [ ] Hypotheses opzetten
-- [ ] Volledige date ophalen die ik nodig ga hebben
-- [ ] d3.js implementeren
+- [ ] Write down the research questions and pick the best ones 🤓
+- [ ] Write down the sub-questions 🤓
+- [ ] Write down the hypotheses 🤓
+- [ ] Fetch all the data I'm going to need 👐
+- [ ] Implement d3.js to make visual representations 📊
+- [ ] Finish this readme 👀
 
-## Installation Guide
-#### 1. Clone the repository
+## Installation Guide 📖
+#### 1. Clone the repository 📥
 ```
 https://github.com/jesseDijkman1/functional-programming.git
 ```
-#### 2. Navigate to the repository
+#### 2. Navigate to the repository 🚗
 ```
 cd functional-programming
 ```
-#### 3. Install the NPM packages
+#### 3. Install the NPM packages 📥
 ```
 npm install
 ```
 
-## Process
+## Process 📝
 
-### Research Questions
+### Research Questions 🔍
 - Is er een verband tussen publicatiejaren en diktes van boeken? (Waren dikkere boeken populairder of niet?)
 - Is er een verband tussen het formaat van een boek en het publicatie jaar? (Waren grotere boeken populairder of niet?)
 - Wat heeft de publicatie datum te maken met de lengte van de titels? (Waren titels vroeger langer of korter?)
@@ -45,9 +46,9 @@ npm install
 - Worden bepaalde genres vaker te laat teruggebracht?
 - Welke genres zijn er sinds 1950 bijgekomen?
 
-#### Picked Questions
+#### Picked Questions 📍
 
-### Sub-Questions
-### Hypotheses
+### Sub-Questions 👶
+### Hypotheses 🤓
 
 ## Code
