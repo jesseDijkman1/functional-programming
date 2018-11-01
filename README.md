@@ -12,7 +12,7 @@ For this project we're fetching data from the oba (public library of Amsterdam) 
   - [Sub-Questions](#sub-questions)
   - [Hypotheses](#hypotheses)
 
-## To-do
+## To-do 📋
 - [ ] Write down the research questions and pick the best ones 🤓
 - [ ] Write down the sub-questions 🤓
 - [ ] Write down the hypotheses 🤓
@@ -38,17 +38,26 @@ npm install
 
 ### Research Questions 🔍
 - Is er een verband tussen publicatiejaren en diktes van boeken? (Waren dikkere boeken populairder of niet?)
+  - _**Translation:** Is there a connection between the publication-date and the thickness of books? (Were thicker books more popular?)_
 - Is er een verband tussen het formaat van een boek en het publicatie jaar? (Waren grotere boeken populairder of niet?)
+  - _**Translation:** Is there a connection between the size of a book and the publication-date? (Were bigger books more popular?)_
 - Wat heeft de publicatie datum te maken met de lengte van de titels? (Waren titels vroeger langer of korter?)
-- Zijn er bepaalde trends qua onderwerpen/genre’s per jaar?
-- Hoelang worden boeken geleend gemiddeld per jaar (door de jaren heen)?
+  - _**Translation:** Does the publication-date have a connection with the length of the titles? (Were titles back in the day longer?)_
+- Zijn er bepaalde trends qua onderwerpen/genres per jaar?
+  - _**Translation:** Were there trends in subjects/genres per year?_
+- 👉**Hoelang worden boeken geleend gemiddeld per jaar (door de jaren heen)?**
+  - _**Translation:** How long are books borrowed on average per year?
 - Zijn boeken populairder geworden of juist niet, zijn films populairder geworden om te lenen?
-- Worden bepaalde genres vaker te laat teruggebracht?
-- Welke genres zijn er sinds 1950 bijgekomen?
+  - _**Translation:** Did books get more popular or not, (or) did movies get more populair to borrow?_
+- 👉**Worden bepaalde genres vaker te laat teruggebracht?**
+  - _**Translation:** Are certain genres returned too late more often than others?_
+- 👉**Welke genres zijn er sinds 1950 bijgekomen?**
+  - _**Translation:** Wich genres have have emerged since 1950?_
 
 #### Picked Questions 📍
-
+- Hoelang worden boeken geleend gemiddeld per jaar?
+- Worden bepaalde genres vaker te laat terru
 ### Sub-Questions 👶
 ### Hypotheses 🤓
 
-## Code
+## Code 🤓🤓🤓
