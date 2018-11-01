@@ -60,7 +60,7 @@ npm install
 - Worden bepaalde genres vaker te laat teruggebracht?
   - **v.2** Worden bepaalde genres vaker te laat teruggebracht per jaar?
 - Welke genres zijn er sinds 1950 bijgekomen? 
-  - **v.2** Hoe is de populariteit van bepaalde genres verlopen sinds 1950?
+  - **v.2** Hoe is de populariteit van alle genres verlopen sinds 1950?
 ### Sub-Questions 👶
 ### Hypotheses 🤓
 
