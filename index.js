@@ -9,53 +9,97 @@ const client = new OBA({
   secret: process.env.SECRET
 });
 
+var query = 'kano'
 
-const data = [];
-// Get the amount of pages by dividing the amount of date you want by 20
-var dataAmount = Math.round(100 / 20);
-// Array for the indexes of the data pages
-const pages = [];
+var save = [];
+var z = 1;
 
-for (let i = 1; i <= dataAmount; i++) {
-  pages.push(i);
-}
 
-// For each loop to go through the different pages (var i);
-pages.forEach((i) => {
-client.get('search', {
-  q: 'rijk',
-  sort: 'title',
-  page: i
-})
+
+function getTotalBooks() {
+  return client.get('search', {
+    q: query,
+    pagesize: 1
+  })
   .then(res => {
-    var correctRes = JSON.parse(res).aquabrowser.results.result;
-
-    correctRes.forEach(x => {
-      data.push({
-        // Check if there is a titles key, then check if titles has a title key, then check if there are more; if so remove the first and select $t (title). If one of the first conditions fails return undefined.
-        title: (x.titles) ? (x.titles.title) ? (x.titles.title.length > 1) ? x.titles.title.shift().$t : x.titles.title.$t : undefined : undefined,
-        author: (x.authors) ? (x.authors['main-author']) ? x.authors['main-author'].$t : undefined : undefined,
-        publication: (x.publication) ? (x.publication.year) ? x.publication.year.$t : undefined : undefined,
-        physicalInfo: (x.description) ? (x.description['physical-description']) ? x.description['physical-description'].$t : undefined : undefined,
-        language: (x.languages) ? (x.languages.language) ? x.languages.language.$t : undefined : undefined
-      })
-    })
-    // Check if data divided by 20 is equal to the amount of pages. If so call structureData()
-    if ((data.length / 20) == pages.length) {
-      structureData()
-    }
+    return Math.ceil(JSON.parse(res).aquabrowser.meta.count / 20);
   })
-  .catch(err => console.log('error', err))
-})
+  .catch(error => console.log(error))
+}
 
-function structureData() {
-  data.forEach(x => {
-    console.log(`
-      ${x.title}
-      ${x.author}
-      ${x.publication}
-      ${x.physicalInfo}
-      ${x.language}
-      `)
+function getData(i) {
+  return new Promise((resolve, reject) => {
+    client.get('search', {
+      q: query,
+      sort: 'title',
+      librarian: 'true',
+      refine: 'true',
+      page: i
+    })
+      .then(res => {
+        var correctRes = JSON.parse(res).aquabrowser.results.result;
+        const error = false;
+
+          var structuredData = () => correctRes.map(x => {
+
+            return {
+              title: (x.titles) ? (x.titles.title) ? (x.titles.title.length > 1) ? x.titles.title.shift().$t : x.titles.title.$t : undefined : undefined,
+              format: (x.formats) ? (x.formats.format) ? (x.formats.format.length > 1) ? x.formats.format.pop().$t : x.formats.format.$t : undefined : undefined,
+              author: (x.authors) ? (x.authors['main-author']) ? x.authors['main-author'].$t : undefined : undefined,
+              publication: (x.publication) ? (x.publication.year) ? x.publication.year.$t : undefined : undefined,
+              physicalInfo: (x.description) ? (x.description['physical-description']) ? x.description['physical-description'].$t : undefined : undefined,
+              language: (x.languages) ? (x.languages.language) ? x.languages.language.$t : undefined : undefined,
+              genre: (x.genres) ? (x.genres.genre.length > 1) ? x.genres.genre.map(g => g.$t) : x.genres.genre.$t : undefined,
+              subject: (x.subjects) ? (x.subjects['topical-subject']) ? (x.subjects['topical-subject'].length > 1) ? x.subjects['topical-subject'].map(s => s.$t) : x.subjects['topical-subject'].$t : undefined : undefined,
+              publisher: {
+                name: (x.publication) ? (x.publication.publishers) ? x.publication.publishers.publisher.$t : undefined: undefined,
+                place: (x.publication) ? (x.publication.publishers) ? x.publication.publishers.publisher.place : undefined : undefined
+              }
+          }
+          })
+          if (!error) {
+            resolve(structuredData())
+          } else {
+            reject('error 2')
+          }
+        })
+
+      .catch(err => {
+        z = temp.length / 20;
+        updatePage()
+      })
   })
 }
+
+async function updatePage() {
+  var totalData = await getTotalBooks();
+
+  for (z; z <= totalData; z++) {
+
+    await getData(z)
+      .then(res => {
+
+        res.forEach(x => {
+          save.push(x)
+          console.log(`
+            Title: ${x.title}
+            Format: ${x.format}
+            Author: ${x.author}
+            Publication: ${x.publication}
+            Physical information: ${x.physicalInfo}
+            Language: ${x.language}
+            Genre(s): ${x.genre}
+            Subject(s): ${x.subject}
+            Publisher name: ${x.publisher.name} | Publisher place: ${x.publisher.place}
+            `)
+
+      })
+      console.log(save.length)
+    })
+      .catch(error => console.log(error))
+
+  }
+}
+
+
+updatePage()
