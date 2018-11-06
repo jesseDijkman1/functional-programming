@@ -37,31 +37,35 @@ npm install
 ## Process 📝
 
 ### Research Questions 🔍
-- Is er een verband tussen publicatiejaren en diktes van boeken? (Waren dikkere boeken populairder of niet?)
-  - _**Translation:** Is there a connection between the publication-date and the thickness of books? (Were thicker books more popular?)_
-- Is er een verband tussen het formaat van een boek en het publicatie jaar? (Waren grotere boeken populairder of niet?)
-  - _**Translation:** Is there a connection between the size of a book and the publication-date? (Were bigger books more popular?)_
-- Wat heeft de publicatie datum te maken met de lengte van de titels? (Waren titels vroeger langer of korter?)
-  - _**Translation:** Does the publication-date have a connection with the length of the titles? (Were titles back in the day longer?)_
-- Zijn er bepaalde trends qua onderwerpen/genres per jaar?
-  - _**Translation:** Were there trends in subjects/genres per year?_
-- 👉**Hoelang worden boeken geleend gemiddeld per jaar (door de jaren heen)?**
-  - _**Translation:** How long are books borrowed on average per year?_
-- Zijn boeken populairder geworden of juist niet, zijn films populairder geworden om te lenen?
-  - _**Translation:** Did books get more popular or not, (or) did movies get more populair to borrow?_
-- 👉**Worden bepaalde genres vaker te laat teruggebracht?**
-  - _**Translation:** Are certain genres returned to late more often than others?_
-- 👉**Welke genres zijn er sinds 1950 bijgekomen?**
-  - _**Translation:** Wich genres have have emerged since 1950?_
+- Is there a connection between the publication-date and the thickness of books? (Were thicker books more popular?
+- Is there a connection between the size of a book and the publication-date? (Were bigger books more popular?
+- Does the publication-date have a connection with the length of the titles? (Were titles back in the day longer?
+- Were there trends in subjects/genres per year?
+- 👉**How long are books borrowed on average per year?**
+- Did books get more popular or not, (or) did movies get more populair to borrow??
+- 👉**Are certain genres returned too late more often than others?**
+- 👉**Which genres have have emerged since 1950?**
 
   #### Picked Questions 📍
-- Hoelang worden boeken geleend gemiddeld per jaar?
-  - **v.2** Hoelang worden boeken uit bepaalde genres gemiddeld geleend per jaar?
-- Worden bepaalde genres vaker te laat teruggebracht?
-  - **v.2** Worden bepaalde genres vaker te laat teruggebracht per jaar?
-- Welke genres zijn er sinds 1950 bijgekomen?
-  - **v.2** Hoe is de populariteit van alle genres verlopen sinds 1950?
+- How long are books borrowed on average per year?
+  - **v.2** How long are books from certain genres borrowed per year on average?
+- Are certain genres returned too late more often than others?
+- Which genres have have emerged since 1950?
+  - **v.2** How has the popularity changed of certain genres since 1950?
+  - **v.3** Which genres are there from the year 2000?
 ### Sub-Questions 👶
+- Do certain changes in popularity of a genre have a connection with an event/happening from that year?
+- Can the popularity of genres be categorised by province?
+- Can the popularity of genres be categorised by gender?
+
 ### Hypotheses 🤓
+-
+
+
+### What data do I need?
+- Genres => Name, amount
+- Publication year
+- (Location(s) of the books)
+
 
 ## Code 🤓🤓🤓
