@@ -164,7 +164,7 @@ Although I couldn't realise my sketches, I did found a   suitable and ready one 
 
 Althouhg I wanted to make my first choice, I didn't have a way to loop through different years. So I started with a simple pie chart. Which is actually a donut chart but without an inner-radius.
 
-[img]
+![Pie chart](https://imgur.com/iyoFIV7)
 
 Because I don't have any experience with d3 I just started to replace some things and experiment. First thing I did was replace the data.
 
@@ -270,3 +270,4 @@ The data can't give a good answer but from what I can tell from what I have is t
 ## Source(s)
 - https://github.com/rijkvanzanten/node-oba-api
 - https://beta.observablehq.com/@jessedijkman1/exploring-data-with-vega-lite
+- https://zoeken.oba.nl/api/v1/
