@@ -156,7 +156,7 @@ With my research question I went into the sketching fase. How am I going to show
 
 Although I couldn't realise my sketches, I did found a   suitable and ready one on Observable (link).
 
-[img]
+![Chart I want to use](https://i.imgur.com/cpW4vBB.png)
 
 ---
 
@@ -168,17 +168,15 @@ Althouhg I wanted to make my first choice, I didn't have a way to loop through d
 
 Because I don't have any experience with d3 I just started to replace some things and experiment. First thing I did was replace the data.
 
-[img]
+![Pie chart data](https://i.imgur.com/AdZbVDM.png)
 
 Then alter the code so it would look for the new data.
 
-[img]
+![Pie chart code](https://i.imgur.com/je9hM4V.png)
+---
+![Pie chart code](https://i.imgur.com/aFnSS5u.png?1)
 
-... and I removed the donut gap.
-
-[img]
-
-Because this was really easy I wanted to realise my first choice for the visualization. But because this visualization uses and external package it was kinda hard to understand. I just looked at how the data was structured. I then added data relevant to my case. But wasn't the data I would get from the api.
+Because this was really easy I wanted to realise my first choice for the visualization. But because this visualization uses and external package it was kinda hard to understand. I just looked at how the data was structured. I then added data relevant to my case. But it wasn't the data I would get from the api... yet.
 
 I first tried to make the data work in the visualization. I tried to get the date (year) with Object.keys but this wouldn't work because you need to have the date in each object. The data needed to be served as a single array with objects.
 
@@ -224,17 +222,17 @@ And now I wanted to get random colors for the genres. I also added a function fo
 ### Returning the right Data
 With the visualization working I knew how I needed to structure my data. So I updated my code (which is the current code in index.js) and I got this in my terminal.
 
-[screenshot of data in terminal]
+![Data in terminal](https://i.imgur.com/yemhfin.png?1)
 
 So I copied this code and inserted it into my data variable on Observable. And ended up with the following visualization:
 
-[screenshot of final visualization]
+![Final visualization](https://i.imgur.com/r9Vp8Cu.png)
 
 ---
 
 ### Findings and conclusion
 
-[img]
+![Final visualization](https://i.imgur.com/r9Vp8Cu.png)
 
 With this visualization comes a top three for each year:
 
