@@ -3,6 +3,8 @@
 ## Introduction ✌️
 For this project we're fetching data from the oba (public library of Amsterdam) api and creating a research case. With the data we're going to make visualizations with d3.js (which I have never used before). Main point of the project is this README. This README contains the research questions, sub-questions, hypotheses and overall process.
 
+---
+
 ## Table of Contents 🗄
 - [Installation Guide](#installation-guide)
 - [Process](#process)
@@ -19,6 +21,8 @@ For this project we're fetching data from the oba (public library of Amsterdam) 
   - [Findings and conclusion](#findings-and-conclusion)
 - [Sources](#sources)
 
+---
+
 ## Installation Guide 📖
 #### 1. Clone the repository 📥
 ```
@@ -32,6 +36,8 @@ cd functional-programming
 ```
 npm install
 ```
+
+---
 
 ## Process 📝
 
@@ -71,6 +77,8 @@ Looking for something that is not there gives errors, so I had to check everythi
 
 Now that I had collected most of the data. It was time to write down research questions.
 
+---
+
 ### Research Questions 🔍
 - Is there a connection between the publication-date and the thickness of books? (Were thicker books more popular?
 - Is there a connection between the size of a book and the publication-date? (Were bigger books more popular?
@@ -80,6 +88,8 @@ Now that I had collected most of the data. It was time to write down research qu
 - Did books get more popular or not, (or) did movies get more populair to borrow??
 - 👉 **Are certain genres returned too late more often than others?**
 - 👉 **Which genres have have emerged since 1950?**
+
+---
 
 ### Picked Questions 📍
 - How long are books borrowed on average per year?
@@ -91,18 +101,25 @@ Now that I had collected most of the data. It was time to write down research qu
 
 Which version I'm going to pick of the question: "Which genres have emerged since 1950?", depends on the data I eventually have. Now I can get v.3 done, but v.2 might be possible when I can get the data from different years.
 
+---
+
 ### Final Research Question
 - How has the popularity changed of certain genres between the year 2000 and 2002?
 
 I know, I know it's not a big interval. But that's because the api isn't very reliable.
 
+---
+
 ### Sub-Question 👶
 - What has the publication year have to do with the most popular genre?
 
+---
 
 ### Hypotheses 🤓
 - The publication year has nothing to do with the most popular genres.
 - Our interests have shifted over the years.
+
+---
 
 ### What data do I need?
 With my focus on the genres and publications years I needed to specify the gathering of data. Because now I get too much.
@@ -129,6 +146,8 @@ client.get('search', {
 })
 ```
 
+---
+
 ### Sketches
 
 With my research question I went into the sketching fase. How am I going to show what I want. Well I had a few ideas.
@@ -138,6 +157,8 @@ With my research question I went into the sketching fase. How am I going to show
 Although I couldn't realise my sketches, I did found a   suitable and ready one on Observable (link).
 
 [img]
+
+---
 
 ### D3.js Testing
 
@@ -198,6 +219,8 @@ And now I wanted to get random colors for the genres. I also added a function fo
 }
 ```
 
+---
+
 ### Returning the right Data
 With the visualization working I knew how I needed to structure my data. So I updated my code (which is the current code in index.js) and I got this in my terminal.
 
@@ -207,6 +230,7 @@ So I copied this code and inserted it into my data variable on Observable. And e
 
 [screenshot of final visualization]
 
+---
 
 ### Findings and conclusion
 
@@ -240,6 +264,8 @@ I can say that from this visualization, science-fiction has become more popular.
 The same goes for my subquestion and hypotheses
 
 The data can't give a good answer but from what I can tell from what I have is that it might have become more popular to give a twist to 'oorlogs verhalen' (stories about war).
+
+---
 
 ## Source(s)
 - https://github.com/rijkvanzanten/node-oba-api
