@@ -152,7 +152,9 @@ client.get('search', {
 
 With my research question I went into the sketching fase. How am I going to show what I want. Well I had a few ideas.
 
-[img]
+![Idea 1: Data visualization genres](https://i.imgur.com/lVjTXV9.jpg?1)
+---
+![Idea 2: Data visualization genres](https://i.imgur.com/jwkYxXv.jpg?1)
 
 Although I couldn't realise my sketches, I did found a   suitable and ready one on Observable (link).
 
