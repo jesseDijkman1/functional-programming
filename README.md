@@ -164,7 +164,7 @@ Although I couldn't realise my sketches, I did found a   suitable and ready one 
 
 Althouhg I wanted to make my first choice, I didn't have a way to loop through different years. So I started with a simple pie chart. Which is actually a donut chart but without an inner-radius.
 
-![Pie chart](https://imgur.com/iyoFIV7)
+![Pie chart](https://i.imgur.com/iyoFIV7.png)
 
 Because I don't have any experience with d3 I just started to replace some things and experiment. First thing I did was replace the data.
 
