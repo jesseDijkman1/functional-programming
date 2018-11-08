@@ -4,14 +4,19 @@
 For this project we're fetching data from the oba (public library of Amsterdam) api and creating a research case. With the data we're going to make visualizations with d3.js (which I have never used before). Main point of the project is this README. This README contains the research questions, sub-questions, hypotheses and overall process.
 
 ## Table of Contents 🗄
-- [To-do](#to-do)
 - [Installation Guide](#installation-guide)
 - [Process](#process)
+  - [The Data](#the-data)
   - [Research Questions](#research-questions)
   - [Picked Questions](#picked-questions)
-  - [Sub-Questions](#sub-questions)
+  - [Final Research Question](#final-research-question)
+  - [Sub-Question(s)](#sub-question)
   - [Hypotheses](#hypotheses)
-  - [Researching the data](#researching-the-data)
+  - [What data do I need?](#what-data-do-i-need?)
+  - [Sketches](#sketches)
+  - [D3.js Testing](#d3.js-testing)
+  - [Returning the right Data](#returning-the-right-data)
+  - [Findings and conclusion](#findings-and-conclusion)
 - [Sources](#sources)
 
 ## Installation Guide 📖
@@ -91,7 +96,7 @@ Which version I'm going to pick of the question: "Which genres have emerged sinc
 
 I know, I know it's not a big interval. But that's because the api isn't very reliable.
 
-### Sub-Question(s) 👶
+### Sub-Question 👶
 - What has the publication year have to do with the most popular genre?
 
 
@@ -209,22 +214,20 @@ So I copied this code and inserted it into my data variable on Observable. And e
 
 With this visualization comes a top three for each year:
 
-- **2000:**
-  1. 'Oorlog en verzet' (war and resistance)
-  2. 'Psychologisch verhaal' (psychological story)
-  3. 'Thriller'
+#### 2000:
+1. **'Oorlog en verzet'** (war and resistance)
+2. **'Psychologisch verhaal'** (psychological story)
+3. **'Thriller'**
 
+#### 2001:
+1. **'Oorlog en verzet'** (war and resistance)
+2. **'Psychologisch verhaal'** (psychological story)
+3. **'Protestants milieu'** (Protestant environment)
 
-- **2001:**
-  1. 'Oorlog en verzet' (war and resistance)
-  2. 'Psychologisch verhaal' (psychological story)
-  3. 'Protestants milieu' (Protestant environment)
-
-
-- **2002:**
-  1. 'Oorlog en verzet' (war and resistance)
-  2. 'Psychologisch verhaal' (psychological story)
-  3. 'Protestants milieu' (Protestant environment)
+#### 2002:
+1. **'Oorlog en verzet'** (war and resistance)
+2. **'Psychologisch verhaal'** (psychological story)
+3. **'Protestants milieu'** (Protestant environment)
 
 Looking at this top three, I almost no changes, except for nr 3 in 2000 being 'Thriller' and in 2001 and 2002 'Protestants milieu'.
 
