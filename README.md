@@ -524,5 +524,5 @@ Not trying to be a suck-up but I really liked this course. I learned more about 
 - https://blog.lavrton.com/javascript-loops-how-to-handle-async-await-6252dd3c795
 
 ## Licence
-MIT © [Jesse Dijkman](https://github.com/jesseDijkman1)
+MIT © [Jesse Dijkman](https://github.com/jesseDijkman1)\n
 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
