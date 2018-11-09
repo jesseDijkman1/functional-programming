@@ -1,6 +1,6 @@
 # functional-programming
 
-_**Student:** jesse Dijkman_
+_**Student:** jesse Dijkman_ 🤓
 
 ## Introduction ✌️
 For this project we're fetching data from the oba (public library of Amsterdam) API and creating a research case. With the data from the API we're going to make visualizations using D3.js (which I have never used before). Main point of the project is this README. This README contains the research questions, sub-questions, hypotheses and overall process.
@@ -8,22 +8,22 @@ For this project we're fetching data from the oba (public library of Amsterdam) 
 ---
 
 ## Table of Contents 🗄
-- [Installation Guide](#installation-guide)
-- [Process](#process)
-  - [The Data](#the-data)
+- [Installation Guide](#installation-guide-)
+- [Process](#process-)
+  - [The Data](#the-data-)
   - [Research Questions](#research-questions-)
   - [Picked Questions](#picked-questions-)
   - [Final Research Question](#final-research-question-)
   - [Sub-Question(s)](#sub-question-)
-  - [Hypotheses](#hypotheses)
-  - [What data do I need?](#what-data-do-i-need?)
-  - [Sketches](#sketches)
-  - [D3.js Testing](#d3.js-testing)
-  - [Returning the right Data](#returning-the-right-data)
-  - [Findings and conclusion](#findings-and-conclusion)
-- [The Code](#the-code)
-- [Reflection](#reflection)
-- [Sources](#sources)
+  - [Hypotheses](#hypotheses-)
+  - [What data do I need?](#what-data-do-i-need?-)
+  - [Sketches](#sketches-)
+  - [D3.js Testing](#d3.js-testing-)
+  - [Returning the right Data](#returning-the-right-data-)
+  - [Findings and conclusion](#findings-and-conclusion-)
+- [The Code](#the-code-)
+- [Reflection](#reflection-)
+- [Sources](#sources-)
 
 ---
 
@@ -45,7 +45,7 @@ npm install
 
 ## Process 📝
 
-### The Data
+### The Data 📊
 To come up with research questions we had to research the data we were served. The data comes to us in JSON, but is originally XML. Thanks to rijkvanzanten's package we can make requests to the API and get data back in JSON. From there we had to see what data we got.
 But seeing what we got was trickier than expected, because there are a lot of keys, nested objects and arrays. To get the data I first had to get into aquabrowser (top level object), then in results and then in result (aquabrowser.results.result).
 This would give an array of objects, each object is a book, movie or something else. And not all the objects had the same data; a lot was missing.
@@ -111,25 +111,25 @@ Which version I'm going to pick of the question: "Which genres have emerged sinc
 
 ---
 
-### Final Research Question
+### Final Research Question 🎓
 - How has the popularity changed of certain genres between the year 2000 and 2002?
 
 I know, I know, it's not a big interval. But that's because the API isn't very reliable.
 
 ---
 
-### Sub-Question 
+### Sub-Question ❓
 - What has the publication year have to do with the most popular genre?
 
 ---
 
-### Hypotheses 
+### Hypotheses 🤓
 - The publication year has nothing to do with the most popular genres.
 - Our interests have shifted over the years.
 
 ---
 
-### What data do I need?
+### What data do I need? 🤔
 With my focus on the genres and publication years I needed to specify the gathering of data. Because now I get too much data.
 
 So I removed some code and added the following one for filtering my results to get books that have a genres object.
@@ -156,7 +156,7 @@ client.get('search', {
 
 ---
 
-### Sketches
+### Sketches ✍️
 
 With my research question done, I went into the sketching fase. How am I going to show what I want. Well I had a few ideas.
 
@@ -182,7 +182,7 @@ Although I couldn't realise my sketches, I did find a suitable and ready one on 
 
 ---
 
-### D3.js Testing
+### D3.js Testing 💥🔥
 
 Although I wanted to make my first choice (Sketch 2), I didn't have a way to loop through different years (yet 😎). So I started with a simple pie chart just to get familiar. The pie chart is actually a donut chart but without an inner-radius (Not really important).
 
@@ -243,7 +243,7 @@ And now I wanted to get random colors for the genres, because each genre needs t
 
 ---
 
-### Returning the right Data
+### Returning the right Data 👍
 With the visualization working I knew how I needed to structure my data. I did this in the following way: 
 
 ```js 
@@ -292,7 +292,7 @@ So I copied this code and inserted it into my data variable on [Observable](http
 
 ---
 
-### Findings and conclusion
+### Findings and conclusion 👀
 Now that the visualization was working (with the small amount of data I had), I looked at it to see if there was anything going on. Are there certain changes, transitions. 
 
 [![Final visualization](https://i.imgur.com/r9Vp8Cu.png)](https://beta.observablehq.com/@jessedijkman1/exploring-data-with-vega-lite)
@@ -338,7 +338,7 @@ The data can't give a good answer but what I can tell from what I have is that i
 
 ---
 
-## The Code
+## The Code ⚙️
 
 ```js
 require('dotenv').config()
@@ -514,15 +514,15 @@ updatePage()
 
 ```
 
-## Reflection
+## Reflection 🤔
 Not trying to be a suck-up but I really liked this course. I learned more about promises, and async and await. This was also the first time I worked with an API. I also learned alot about higher-order-functions. Now I now better which one to choose; before this course I would always use forEach and now I tried to use as many as possible and be sematically correct.
 
-## Sources
+## Sources ⚡️
 - https://github.com/rijkvanzanten/node-oba-api
 - https://beta.observablehq.com/
 - https://zoeken.oba.nl/api/v1/
 - https://blog.lavrton.com/javascript-loops-how-to-handle-async-await-6252dd3c795
 
-## Licence
-MIT © [Jesse Dijkman](https://github.com/jesseDijkman1)\n
+## Licence 👮
+MIT © [Jesse Dijkman](https://github.com/jesseDijkman1)<br>
 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
