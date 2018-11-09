@@ -21,6 +21,8 @@ For this project we're fetching data from the oba (public library of Amsterdam) 
   - [D3.js Testing](#d3.js-testing)
   - [Returning the right Data](#returning-the-right-data)
   - [Findings and conclusion](#findings-and-conclusion)
+- [The Code](#the-code)
+- [Reflection](#reflection)
 - [Sources](#sources)
 
 ---
@@ -512,7 +514,15 @@ updatePage()
 
 ```
 
-## Source(s)
+## Reflection
+Not trying to be a suck-up but I really liked this course. I learned more about promises, and async and await. This was also the first time I worked with an API. I also learned alot about higher-order-functions. Now I now better which one to choose; before this course I would always use forEach and now I tried to use as many as possible and be sematically correct.
+
+## Sources
 - https://github.com/rijkvanzanten/node-oba-api
 - https://beta.observablehq.com/
 - https://zoeken.oba.nl/api/v1/
+- https://blog.lavrton.com/javascript-loops-how-to-handle-async-await-6252dd3c795
+
+## Licence
+MIT © [Jesse Dijkman](https://github.com/jesseDijkman1)
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
